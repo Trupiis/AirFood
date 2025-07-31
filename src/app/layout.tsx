@@ -1,16 +1,29 @@
+
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Playfair_Display, Inter } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const greatVibes = localFont({
+  src: "../fonts/GreatVibes.ttf",
+  variable: "--font-mi-fuente-1",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
 });
+
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,8 +37,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/xck4doz.css"/>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${greatVibes.variable} ${playfair.variable} ${inter.variable}  antialiased`}
       >
         {children}
       </body>
