@@ -11,6 +11,10 @@ const config: Config = {
         inter: ["var(--font-inter)"],
 
         },
+        container: {
+    center: true,
+    padding: "1rem",
+  }
       
     },
   },

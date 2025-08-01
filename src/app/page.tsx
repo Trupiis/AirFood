@@ -15,6 +15,7 @@ import Footer from "./Components/Footer"
 import Jets from "./Components/Jets"
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
+import Sidebar from "./Components/SideBar"
 
 import Services from "./Components/Services"
 import CardServices from "./Components/CardServices"
@@ -119,18 +120,26 @@ const dishes = allDishes[activeCategory] ?? [];
 console.log("Categoría activa:", activeCategory);
   return (
 
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
       
 
-      <section
-        className="relative h-screen bg-cover bg-center text-white"
-        style={{ backgroundImage: "url('/fondo-2.png')" }}
-      >
+<section id="INICIO"
+   className="relative h-screen bg-cover bg-center text-white"
+   style={{ backgroundImage: "url('/fondo-2.png')" }}
+>
 
   {/* Overlay opcional */}
   <div className="absolute inset-0 bg-black/60 z-0" />
 
   <Header/>
+  <Sidebar>
+  <ul className="space-y-4">
+    <li className="text-lg text-gray-800">Inicio</li>
+    <li className="text-lg text-gray-800">Servicios</li>
+    <li className="text-lg text-gray-800">Menú</li>
+    <li className="text-lg text-gray-800">Contacto</li>
+  </ul>
+</Sidebar>
   <Hero/>
 </section>
 

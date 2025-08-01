@@ -38,10 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://use.typekit.net/xck4doz.css"/>
       </head>
       <body
-        className={`${greatVibes.variable} ${playfair.variable} ${inter.variable}  antialiased`}
+        className={`${greatVibes.variable} ${playfair.variable} ${inter.variable} box-border overflow-x-hidden antialiased`}
       >
         {children}
       </body>
