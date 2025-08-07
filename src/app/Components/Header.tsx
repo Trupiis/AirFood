@@ -35,11 +35,11 @@ function Header () {
     
     return(
     <div id="INICIO" className="max-md:hidden relative z-10">
-    <div className="container  mx-auto py-5 grid grid-cols-3 items-center">
-        
+
+    <div className="container  mx-auto pt-10 grid grid-cols-3 items-center">  
         {/* LOGO izquierda */}
         <div className="flex justify-start items-center space-x-2">
-        <span className="text-white text-3xl font-light font-rieven">FLOWING</span>
+        <span className="text-white text-3xl font-light font-rieven">FOODWING</span>
         </div>
 
         {/* NAV centro */}

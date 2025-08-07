@@ -9,7 +9,7 @@ function Footer () {
         <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
-        <span className="text-white text-xl font-light font-playfair">FLOWING</span>
+        <span className="text-white text-xl font-light font-playfair">FOODWING</span>
         </div>
         
         <p className="text-gray-400 text-sm">Derechos reservados - 2025</p>

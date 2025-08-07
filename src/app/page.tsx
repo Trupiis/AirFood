@@ -244,7 +244,7 @@ const dishes = allDishes[activeCategory] ?? [];
           </CardContact>
 
           <CardContact icon={<Mail className="w-8 h-8 text-[#8E9371]" />} title="MAIL">
-            <p>concierge@flowing.com.ar</p>
+            <p>concierge@foodwing.com.ar</p>
             <p className="text-gray-600 font-normal">Respuesta inmediata</p>
           </CardContact>
 
