@@ -21,7 +21,7 @@ import Services from "./Components/Services"
 import CardServices from "./Components/CardServices"
 import Contact from "./Components/Contact"
 import CardContact from "./Components/CardContact"
-import ClockIcon from "./icons/clock"
+import SelectCategory from "./Components/Select"
 
 export default function FlowingWebsite() {
 
@@ -178,36 +178,42 @@ const dishes = allDishes[activeCategory] ?? [];
       <div className="bg-[#8E9371] w-full h-6"></div> {/* DIVISION DE LAS PAGINAS */}
       
       
-      
-      {/* Menu Categories Section */}
-    <section id="MENÚ" className="bg-[#2a2a2a] py-30">
-      <div className="container mx-auto px-6">
-      {/* Botones de categorías */}
-      <div className="flex justify-center">
-        <div className="flex items-center space-x-6 px-6 py-2">
-          {foodTypes.map((item) => (
-            <button
-              key={item}
-              onClick={() => handleCategoryChange(item)}
-              className={`font-light text-3xl transition-colors ${
-                activeCategory === item
-                  ? "text-[#A66915] border-b-2 border-[#a66915] duration-150"
-                  : "text-white hover:text-[#A66915]"
-              }`}
-            >
-              {item}
-            </button>
-          ))}
-        </div>
+ {/* Menu Categories Section */}
+<section id="MENÚ" className="bg-[#2a2a2a] py-30">
+  <div className="container mx-auto px-6">
+
+    {/* Mobile: Select de categorías (MUI) */}
+    <SelectCategory
+      className="flex justify-center md:hidden"
+      label="Categoría"
+      value={activeCategory}
+      options={foodTypes}
+      onChange={handleCategoryChange}
+    />
+
+    {/* Desktop: Botones de categorías (Tailwind) */}
+    <div className="hidden md:flex justify-center">
+      <div className="flex items-center space-x-6 px-6 py-2">
+        {foodTypes.map((item) => (
+          <button
+            key={item}
+            onClick={() => handleCategoryChange(item)}
+            className={`font-light text-3xl transition-colors ${
+              activeCategory === item
+                ? "text-[#A66915] border-b-2 border-[#a66915] duration-150"
+                : "text-white hover:text-[#A66915]"
+            }`}
+          >
+            {item}
+          </button>
+        ))}
       </div>
+    </div>
 
     {/* Tarjetas de platos */}
     <div className={`flex flex-wrap justify-center gap-10 py-20 ${animationClass}`}>
       {dishes?.map((dish, i) => (
-        <div
-          key={i}
-          className="flex flex-col justify-center items-center"
-        >
+        <div key={i} className="flex flex-col justify-center items-center">
           <Image
             src={dish.img}
             alt={dish.title}

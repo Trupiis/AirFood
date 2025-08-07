@@ -10,7 +10,7 @@ function Jets () {
         <div className="relative z-10 container mx-auto px-6">
           <div className="max-w-4xl text-white">
             <h1 className="text-5xl md:text-6xl font-light mb-4 font-playfair">Minimalismo elegante para</h1>
-            <h2 className="text-3xl md:text-6xl font-light italic text-[#8E9371] font-great mb-8">jets privados</h2>
+            <h2 className="text-5xl md:text-6xl font-light italic text-[#8E9371] font-great max-md:ml-5 mb-8">jets privados</h2>
 
             <p className="text-lg mb-12 text-gray-200 leading-relaxed max-w-3xl">
               Servicio gastronómico de alta gama para dueños de jets privados, empresas de aviación ejecutiva y clientes

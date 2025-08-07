@@ -45,7 +45,6 @@ export default function Sidebar({ children }: SidebarProps) {
 
   return (
     <div className="hidden max-md:flex fixed top-6 left-0 right-0 z-50 justify-between items-center px-6">
-        <h2 className="text-white text-2xl font-rieven">FLOWING</h2>
         <button
             className="hidden max-md:block fixed top-6 right-6 z-50 text-white px-4 py-2 rounded"
             onClick={() => setOpen(true)}
