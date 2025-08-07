@@ -5,7 +5,7 @@ import PersonsIcon from "../icons/persons";
 function Jets () {
     return(
 <section className="relative py-30 bg-gray-900 overflow-hidden"
-      style={{ backgroundImage: "url('/fondo-3.png')" }}>
+      style={{ backgroundImage: "url('/fondo-3.webp')" }}>
 
         <div className="relative z-10 container mx-auto px-6">
           <div className="max-w-4xl text-white">

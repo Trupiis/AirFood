@@ -55,69 +55,68 @@ export default function FlowingWebsite() {
     {
       title: "Desayuno 1",
       description: "Huevos fritos con bacon y acelga",
-      img: "/dishes/p.png",
+      img: "/dishes/p.webp",
     },
     {
       title: "Desayuno 2",
       description: "Tostada con pasta de maní, frutillas, moras y arandanos",
-      img: "/dishes/p1.png",
+      img: "/dishes/p1.webp",
     },
     {
       title: "Desayuno 3",
       description: "Granola, banana, arandanos y yogurt griego",
-      img: "/dishes/p3.png",
+      img: "/dishes/p3.webp",
     },
     {
       title: "Desayuno 4",
       description: "Tostadas con burrata, tomate y albaca",
-      img: "/dishes/p4.png",
+      img: "/dishes/p4.webp",
     }
   ],
   PRINCIPAL: [
     {
       title: "Principal 1",
       description: "Huevos fritos con bacon y acelga",
-      img: "/dishes/p.png",
+      img: "/dishes/p.webp",
     },
     {
       title: "Principal 2",
       description: "Huevos fritos con bacon y acelga",
-      img: "/dishes/p.png",
+      img: "/dishes/p.webp",
     },
     {
       title: "Principal 3",
       description: "Huevos fritos con bacon y acelga",
-      img: "/dishes/p.png",
+      img: "/dishes/p.webp",
     }],
   GOURMET: [
     {
       title: "Gourmet 1",
       description: "Tostada con pasta de maní, frutillas, moras y arandanos",
-      img: "/dishes/p1.png",
+      img: "/dishes/p1.webp",
     },
     {
       title: "Gourmet 2",
       description: "Tostada con pasta de maní, frutillas, moras y arandanos",
-      img: "/dishes/p1.png",
+      img: "/dishes/p1.webp",
     },
   ],
   POSTRES: [
     {
       title: "Postres 1",
       description: "Tostada con pasta de maní, frutillas, moras y arandanos",
-      img: "/dishes/p1.png",
+      img: "/dishes/p1.webp",
     },
     {
       title: "Postres 2",
       description: "Tostada con pasta de maní, frutillas, moras y arandanos",
-      img: "/dishes/p1.png",
+      img: "/dishes/p1.webp",
     },
   ]
 
 };
 const dishes = allDishes[activeCategory] ?? [];
 
-console.log("Categoría activa:", activeCategory);
   return (
 
     <div className="min-h-screen bg-white overflow-x-hidden w-full">
@@ -125,7 +124,7 @@ console.log("Categoría activa:", activeCategory);
 
 <section id="INICIO"
    className="relative h-screen bg-cover bg-center text-white"
-   style={{ backgroundImage: "url('/fondo-2.png')" }}
+   style={{ backgroundImage: "url('/fondo-2.webp')" }}
 >
 
   {/* Overlay opcional */}
